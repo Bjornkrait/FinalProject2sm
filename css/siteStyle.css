@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0 auto;
+}
+
+body {
+    max-width: 1600px;
+    font-family: "Roboto", sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+/*-----------------------header---------------------*/
+
+.header {
+    background-image: url(../img/Header.png);
+    height: 900px;
+    background-size: cover;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.navigation_header {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    height: 100px;
+}
+
+.text_header {
+    margin: 0 0;
+    padding-left: 190px;
+    width: 700px;
+}
+
+.text_header_item {
+    font-size: 65px;
+    color: white;
+}
+
+.text_header_item_small {
+    margin: 0 0;
+    font-size: 18px;
+    color: white;
+    width: 400px;
+    line-height: 30px;
+    opacity: 60%;
+    font-weight: normal;
+
+}
+
+.nav_logo_img {
+    width: 150px;
+}
+
+.nav_button {
+    width: 163px;
+    height: 51px;
+    border-radius: 10px;
+    border: none;
+    background-color: brown;
+    color: white;
+    transition: 0.2s;
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.nav_button:hover {
+    background-color: lightsalmon;
+    transition: 0.3s;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    gap: 20px;
+}
+
+.navbar_item {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.2s color;
+}
+
+.navbar_item:hover {
+    color: lightsalmon;
+    transition: 0.2s color;
+}
+
+
+/*-----------------------popular-location---------------------*/
+
+.popular_location {
+    display: flex;
+    flex-direction: column;
+    padding: 190px;
+    width: 1220px;
+}
+
+.pop_loc_items {
+    margin: 0 0;
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    grid-template-rows: 500px;
+    justify-content: space-between;
+}
+
+.pop_loc_item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: none;
+    box-shadow: 0px 0px 10px 0.1px gray;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.pop_loc_item img {
+    width: 100%;
+}
